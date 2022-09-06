@@ -1,3 +1,3 @@
-# Sentimiment Client based on Streamlit
+# Sentiment Client
 
 Streamlit based frontend for sentiment analysis
