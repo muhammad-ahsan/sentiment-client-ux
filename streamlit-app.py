@@ -39,7 +39,7 @@ def get_response(query: str) -> pd.DataFrame:
     return format_response(requests.get(api_url).text)
 
 
-sentence = st.text_input('Type text inside the box', "")
+sentence = st.text_input('Type text inside the box', "This is awesome!")
 
 # st.write(get_response(sentence))
 st.bar_chart(get_response(sentence))
