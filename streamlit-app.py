@@ -8,6 +8,8 @@ import streamlit as st
 # Sentiment Analysis
 """
 
+sentence = st.text_input('Type text inside the box', "This is awesome!")
+
 
 def format_response(response: str) -> pd.DataFrame:
     # Convert text to dictionary object
@@ -39,11 +41,7 @@ def get_response(query: str) -> pd.DataFrame:
     return format_response(requests.get(api_url).text)
 
 
-sentence = st.text_input('Type text inside the box', "This is awesome!")
-
-#
 st.bar_chart(get_response(sentence))
-
 st.write("The compound score is the sum of positive, negative & neutral scores. It is then normalized between"
          " -1 (most extreme negative) and +1 (most extreme positive).")
 
