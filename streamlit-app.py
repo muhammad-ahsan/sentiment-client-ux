@@ -44,8 +44,8 @@ sentence = st.text_input('Type text inside the box', "This is awesome!")
 #
 st.bar_chart(get_response(sentence))
 
-st.write("The compound score is the sum of positive, negative & neutral scores")
-st.write("It is then normalized between -1 (most extreme negative) and +1 (most extreme positive).")
+st.write("The compound score is the sum of positive, negative & neutral scores. It is then normalized between"
+         " -1 (most extreme negative) and +1 (most extreme positive).")
 
 
 "#### Contact Developer"
